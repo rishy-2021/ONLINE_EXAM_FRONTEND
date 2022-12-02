@@ -7,9 +7,9 @@ interface Ansprops {
   changePhone: Function;
 }
 
-function AnsPopUp({ trigger, setTrigger, func }: Ansprops) {
+function AnsPopUp({ trigger, setTrigger }: Ansprops) {
   const [cancel, setCancel] = useState(false);
-  func(cancel);
+
   return trigger ? (
     <main className="noscroll z-30 fixed inset-0 w-full flex justify-center items-center">
       <section className="flex bg-gray-900 w-full bg-opacity-20 justify-center items-center h-screen text-black">

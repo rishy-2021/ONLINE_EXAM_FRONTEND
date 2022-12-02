@@ -126,7 +126,7 @@ function Quiz_Compo() {
             >
               <p className="-rotate-90 text-4xl mt-44 ">Show Answer</p>
               <AnsPopUp
-                func={pull_data}
+                // func={pull_data}
                 trigger={anspop}
                 setTrigger={setanspop}
               />
