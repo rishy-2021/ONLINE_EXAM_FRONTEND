@@ -130,7 +130,7 @@ function Quizaskque() {
 
   function addTempQuiz() {
     axios
-      .post("http://localhost:3001/quiz/addTempQuiz", {
+      .post("https://online-exam-app-bu.onrender.com/quiz/addTempQuiz", {
         user: user,
         question: question,
         Ques_Image: Ques_Image,

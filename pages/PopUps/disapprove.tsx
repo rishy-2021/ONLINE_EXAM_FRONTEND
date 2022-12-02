@@ -16,7 +16,9 @@ function DissaprPopUp({
 }: phoneProps) {
   function disaproved(id) {
     axios
-      .delete(`http://localhost:3001/quiz/deleteTempQuizs/${id}`)
+      .delete(
+        `https://online-exam-app-bu.onrender.com/quiz/deleteTempQuizs/${id}`
+      )
       .then((response) => console.log(response))
       .catch((error) => console.log(error));
   }

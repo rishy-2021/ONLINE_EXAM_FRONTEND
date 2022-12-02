@@ -15,7 +15,7 @@ function Quiz_Compo() {
 
   useEffect(function () {
     axios
-      .get("http://localhost:3001/quiz/main/getMainQuizs")
+      .get("https://online-exam-app-bu.onrender.com/quiz/main/getMainQuizs")
       .then((response) => setQuizes(response.data.data))
       .catch((error) => console.log(error));
   }, []);

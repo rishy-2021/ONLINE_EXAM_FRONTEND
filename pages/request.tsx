@@ -15,7 +15,7 @@ function Request() {
   useEffect(
     function () {
       axios
-        .get("http://localhost:3001/quiz/getTempQuizs")
+        .get("https://online-exam-app-bu.onrender.com/quiz/getTempQuizs")
         .then((response) => setTempQuizs(response.data.data))
         .catch((error) => console.log(error));
     },
