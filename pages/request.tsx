@@ -1,5 +1,5 @@
 import axios from "axios";
-import { url } from "inspector";
+
 import React, { useEffect, useState } from "react";
 import ApprovePopUp from "./PopUps/Approve";
 import Competition from "./PopUps/Competition";

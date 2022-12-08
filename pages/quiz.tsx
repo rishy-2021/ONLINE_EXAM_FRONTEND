@@ -7,7 +7,12 @@ function Quiz() {
     <>
       <div className="quizbg text-white h-screen bg-gray-900 relative">
         <Quiz_Compo />
-        {/* <button className="bg-red-400 p-2 w-24 text-lg absolute bottom-20 right-44 rounded-lg" onClick={()=>router.push("/Quizpopup")}>Quit</button> */}
+        <button
+          className="bg-red-400 p-2 w-24 text-lg absolute bottom-20 right-44 rounded-lg"
+          onClick={() => router.push("/Quizpopup")}
+        >
+          Quit
+        </button>
       </div>
     </>
   );
