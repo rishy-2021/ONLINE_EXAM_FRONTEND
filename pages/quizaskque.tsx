@@ -130,8 +130,8 @@ function Quizaskque() {
 
   function addTempQuiz() {
     axios
-      .post("https://online-exam-app-bu.onrender.com/quiz/addTempQuiz", {
-        user: user,
+      .post("https://online-exam-app-bu.onrender.com/quiz/main/addTempQuiz", {
+        // user: user,
         question: question,
         Ques_Image: Ques_Image,
         answerText: answerText,
@@ -392,7 +392,7 @@ function Quizaskque() {
               className="inline-block px-6 py-2.5 bg-blue-600 text-white text-base leading-tight uppercase shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
               onClick={() => {
                 addTempQuiz();
-                router.push("/request");
+                router.push("/");
               }}
             >
               Submit
