@@ -17,6 +17,16 @@ function Quiz_Compo() {
 
   const [score, setScore] = useState(0);
 
+  if (currentques > quizes.length) {
+    // router.push("/Successfull");
+    router.push({
+      pathname: "/Successfull",
+      query: {
+        score: score,
+      },
+    });
+  }
+
   useEffect(function () {
     axios
       .get("https://online-exam-app-bu.onrender.com/quiz/main/getMainQuizs")
@@ -66,7 +76,13 @@ function Quiz_Compo() {
 
       setcurrentque(nextques);
     } else {
-      router.push("/Successfull");
+      // router.push("/Successfull");
+      router.push({
+        pathname: "/Successfull",
+        query: {
+          score: score,
+        },
+      });
     }
     // if (currentques > 7) {
     //   router.push("/Successfull");
@@ -110,12 +126,6 @@ function Quiz_Compo() {
     return () => clearInterval(interval);
   }, [secondsLeft, con]);
 
-  const pull_data = (data) => {
-    if (data === true) {
-      // setanspop(false);
-      // setSecondsLeft(0);
-    }
-  };
   return (
     <>
       {con ? (
@@ -211,9 +221,11 @@ function Quiz_Compo() {
             )}
           </div>
           <button
-            className="bg-green-400 text-black font-bold  p-2 px-5 w-37 text-lg absolute bottom-25 right-64 mr-9 mt-2 rounded-lg"
+            className="bg-green-400 text-black font-bold  p-2 px-5 w-37 text-lg absolute bottom-25 right-64 mr-12 mt-2 rounded-lg"
             onClick={() => {
               setcurrentque(currentques + 1);
+              setSecondsLeft(30);
+              setSelected(false);
             }}
           >
             Next Question

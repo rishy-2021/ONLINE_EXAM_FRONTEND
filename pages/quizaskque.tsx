@@ -130,7 +130,7 @@ function Quizaskque() {
 
   function addTempQuiz() {
     axios
-      .post("https://online-exam-app-bu.onrender.com/quiz/main/addTempQuiz", {
+      .post("https://online-exam-app-bu.onrender.com/quiz/main/addMainQuiz", {
         // user: user,
         question: question,
         Ques_Image: Ques_Image,
