@@ -4,17 +4,24 @@ interface Askprops {
   trigger: Boolean;
   setTrigger: React.Dispatch<React.SetStateAction<boolean>>;
   quizes: Object;
+  score: Number;
+
   // children?: React.ReactNode;
   // changePhone: Function;
 }
 
-export default function AnsPopUp({ trigger, quizes, setTrigger }: Askprops) {
+export default function AnsPopUp({
+  trigger,
+  quizes,
+  score,
+  setTrigger,
+}: Askprops) {
   // const [cancel, setCancel] = useState(false);
 
   return trigger ? (
     <div className="bg-[#464d81] mt-24 h-[492px] w-[1024px] ">
       <nav className="top py-6 px-10  text-center w-full">
-        <h1 className="text-center text-xl">Score &nbsp;{0}</h1>
+        <h1 className="text-center text-xl">Score &nbsp;{score}</h1>
       </nav>
       <hr />
       <div className="flex px-10 justify-between py-4 items-center"></div>

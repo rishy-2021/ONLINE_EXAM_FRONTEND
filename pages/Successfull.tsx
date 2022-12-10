@@ -24,6 +24,22 @@ function Successfull() {
           <h1 className="pt-6"> 😔😔😔😔 </h1>
         )}
       </h1>
+      <button
+        className="bg-green-300 bottom-[30%] left-[41%] mx-2 absolute text-black font-bold  p-2 px-4 w-30 text-lg rounded-lg"
+        onClick={() => {
+          router.push("/quiz");
+        }}
+      >
+        Start Again
+      </button>
+      <button
+        className="bg-green-700 bottom-[30%] right-[41%] mx-2 absolute text-white font-bold  p-2 px-6 w-30 text-lg rounded-lg"
+        onClick={() => {
+          router.push("/quiz");
+        }}
+      >
+        Go Home
+      </button>
     </div>
   );
 }

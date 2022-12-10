@@ -156,6 +156,7 @@ function Quiz_Compo() {
                 quizes={quizes[currentques]}
                 trigger={anspop}
                 setTrigger={setanspop}
+                score={score}
               />
             ) : (
               <div className="bg-[#464d81] mt-24 h-4/5 w-4/5 lg:w-3/5 pb-10">
