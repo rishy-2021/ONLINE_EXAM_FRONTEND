@@ -84,10 +84,18 @@ function Quiz_Compo() {
         },
       });
     }
-    // if (currentques > 7) {
-    //   router.push("/Successfull");
-    // }
+    if (currentques > 9) {
+      router.push({
+        pathname: "/Successfull",
+        query: {
+          score: score,
+        },
+      });
+    }
   }
+
+  // console.log(currentques, quizes.length);
+
   const handleSelect = (option, correct) => {
     if (selected === option && selected === correct) {
       return "border-green-500";

@@ -35,7 +35,7 @@ function Successfull() {
       <button
         className="bg-green-700 bottom-[30%] right-[41%] mx-2 absolute text-white font-bold  p-2 px-6 w-30 text-lg rounded-lg"
         onClick={() => {
-          router.push("/quiz");
+          router.push("/");
         }}
       >
         Go Home
